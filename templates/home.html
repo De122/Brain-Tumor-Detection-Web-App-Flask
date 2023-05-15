@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Brain Tumor</title>
+</head>
+<style>
+    #container{
+        border-width: 10px;
+        border-color: rgba(206, 69, 101, 0.93);
+        border-style: solid;
+        border: 0.5rem outset skyblue;
+        margin: 2rem;
+        padding: 1rem;
+        outline: 0.5rem solid pink;
+        outline-offset: 0.5rem;
+        box-shadow: 0 0 0 2rem yellowgreen;
+        min-width:1400 px fit-content;
+        min-height: 1200px fit-content;       
+        
+    } 
+    #heading{
+         font-size :50px;
+         color: rgb(216, 105, 2);
+         font-style: oblique;
+         text-align: center;
+        }
+    #askMRI{
+                border-width: 0.5px;
+                background-color: plum;
+                font-size: 30px;
+                color: blueviolet;
+                text-align: center;
+                width:1395px;
+                margin:auto;
+                padding:1px;
+                margin: 0px  10px;
+
+                
+         }
+         #containerform {  
+            padding:10px;
+                           box-shadow: 0 0 0 10rem grey;
+                           border-width:0.2px;
+                           background-color:pink;
+                           width:1350px;
+                           padding:0px;
+                           text-align:center;
+                           margin:auto;
+                           height:3000px;
+                           display:flex;
+  justify-content: center;
+             
+         }
+         
+        label{
+            font-size:50px;
+            color: rgba(206, 69, 101, 0.93);
+            font-style:normal;
+            margin: 0px;                   
+            padding: 0px;
+            line-height: 1em;
+
+        }      
+  
+
+
+         input[type=file] {
+           border: 2px solid red;
+            border-radius: 4px;
+            height: fit-content;
+            font-size: 20px;
+            width: 300px;
+            margin: 0px;
+            padding: 0px;
+            
+}
+
+input[type=submit] {
+            height: fit-content;
+            font-size: 20px;
+            width: 100px;
+}
+         
+</style>
+<body>]
+    <div id="container">
+    <div id="heading"><p>Brain Tumor Detection</p></div>
+    <div id="askMRI"><p style="font-style:italic">Enter your MRI below</p></div>
+    <br><br>
+    <div class="containerform" style="text-align:center" >
+    <form method="POST" action="/submit" enctype="multipart/form-data">
+             <label for="mri"><p style="text-align: center">Upload your MRI</p></label><br>
+             <p style="text-align: center"> <input class=" col-xs-offset-2" type="file" id="mri" name="MRI" accept="image/*"  ></p>
+             <br>
+            <p><input class=" col-xs-offset-2" type="submit" value="Submit"></a></p>
+        </form>     
+       
+       
+     </div>
+     
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Result</title>
+</head>
+<style>
+            .topBar{
+                
+            }
+            #container{
+        border-width: 10px;
+        border-color: rgba(206, 69, 101, 0.93);
+        border-style: solid;
+        border: 0.5rem outset skyblue;
+        margin: 2rem;
+        padding: 1rem;
+        outline: 0.5rem solid pink;
+        outline-offset: 0.5rem;
+        box-shadow: 0 0 0 2rem yellowgreen;
+        min-width:1400 px fit-content;
+        min-height: 1200px fit-content;
+        
+
+    }
+</style>
+
+<body>
+    
+    
+    <div id="container">
+        {% if prediction %}
+        
+        <h2><i> {{prediction}} </i></h2>
+    
+        {% endif %}
+        
+</div>
+
+</body>
+</html>
